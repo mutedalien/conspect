@@ -6,4 +6,4 @@ $file = fopen($path,"r");
 while(!feof($file)){
     echo fgets($file)."<br>";
 }
-//echo file_get_contents($path); 
+//echo file_get_contents($path); // Более простой пример, но здесь мы не сможем вносить изменения в строки
