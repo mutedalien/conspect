@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Атрибуты pattern и autofocus</title>
+    </head>
+    <body>
+        <header>
+            <div class="floatFigure">
+                <img src="images/html5css3.png" alt="html5 css3">
+            </div>
+            <h1>HTML5 & CSS3</h1>
+        </header>
+
+        <nav>
+            <a href="autocomplete.html">Автодополнение</a>
+            <a href="date_formats.html">Атрибут type для работы с датами</a>
+            <a href="other_formats.html">Другие атрибуты type</a>
+            <a href="pattern_autofocus.html">Атрибуты pattern и autofocus</a>
+            <a href="type_image.html">Type image</a>
+            <a href="type_range.html">Type range</a>
+        </nav>
+
+        <div id="content">
+            <div>
+                <h1>
+                    На этой странице основными нововведениями являются атрибуты autofocus и
+                    pattern.
+                </h1>
+                <dl>
+                    <dt>autofocus</dt>
+                    <dd>
+                        при открытии страницы курсор становится в тот input где стоит атрибут
+                        autofocus.
+                    </dd>
+
+                    <dt>pattern</dt>
+                    <dd>
+                        атрибут pattern задает правила текста на основе регулярных выражений pcre,
+                        который должен быть введен в поле для ввода.
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="" method="post">
+                <p>
+                    <i>
+                        Пожалуйста, заполните форму регистрации пользователей. Обязательные поля
+                        помечены
+                    </i>
+                    <em>*</em>
+                </p>
+                <fieldset>
+                    <legend>Контактная информация</legend>
+
+                    <label for="surname">Фамилия <em>*</em></label>
+                    <input type="text"
+                           id="surname"
+                           name="surname"
+                           placeholder="Иванов"
+                           autofocus
+                           pattern="^([А-Яа-я]+)$">
+                    <br>
+                    <!-- Поэксперементировать с паттерном для Ф/И/О можно здесь https://regex101.com/r/wMn5fv/1/ -->
+
+                    <label for="name">Имя <em>*</em></label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Иван"
+                           pattern="^([А-Яа-я]+)$">
+                    <br>
+
+                    <label for="lastName">Отчество</label>
+                    <input type="text"
+                           id="lastName"
+                           name="lastName"
+                           placeholder="Сидорович"
+                           pattern="^([А-Яа-я]+)$">
+                    <br>
+
+                    <label for="email">Email <em>*</em></label>
+                    <input type="text"
+                           id="email"
+                           name="email"
+                           placeholder="email@server.com"
+                           pattern="^([A-Za-z0-9\.-]+)(@)([A-Za-z0-9\.-]+)(\.)([A-Za-z0-9\.-]{2,})$">
+                    <br>
+                    <!-- Поэксперементировать с паттерном для email можно здесь https://regex101.com/r/f9V1L0/1/ -->
+                </fieldset>
+                <p>
+                    <input type="submit" value="Отправить информацию">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

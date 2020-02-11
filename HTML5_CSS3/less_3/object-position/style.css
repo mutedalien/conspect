@@ -1,0 +1,9 @@
+/*
+https://developer.mozilla.org/ru/docs/Web/CSS/object-position
+*/
+img {
+    width: 500px;
+    height: 300px;
+    object-fit: contain;
+    object-position: 40px top;
+}

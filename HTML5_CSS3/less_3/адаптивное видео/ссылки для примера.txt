@@ -1,0 +1,4 @@
+http://css-live.ru/articles/znakomstvo-s-object-fit.html
+https://html5book.ru/svoystva-object-fit-i-object-position/
+https://developer.mozilla.org/en-US/docs/Web/CSS/object-position
+http://css-live.ru/articles/kratkij-obzor-object-fit-i-object-position.html

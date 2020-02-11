@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Другие новые форматы атрибута type</title>
+    </head>
+    <body>
+        <header>
+            <div class="floatFigure">
+                <img src="images/html5css3.png" alt="html5 css3">
+            </div>
+            <h1>HTML5 & CSS3</h1>
+        </header>
+
+        <nav>
+            <a href="autocomplete.html">Автодополнение</a>
+            <a href="date_formats.html">Атрибут type для работы с датами</a>
+            <a href="other_formats.html">Другие атрибуты type</a>
+            <a href="pattern_autofocus.html">Атрибуты pattern и autofocus</a>
+            <a href="type_image.html">Type image</a>
+            <a href="type_range.html">Type range</a>
+        </nav>
+
+        <div id="content">
+            <div>
+                <h1>На этой странице представлены другие популярные типы для атрибута type.</h1>
+                <dl>
+                    <dt>type="email"</dt>
+                    <dd>
+                        Используется для ввода пользователем корректного email-адреса. Браузер
+                        требует
+                        чтобы пользователь ввел данные в формате адрес_ящика@сервер.
+                    </dd>
+                    <dt>type="tel"</dt>
+                    <dd>
+                        Используется для ввода пользователем телефонного номера. Специальных
+                        требований по оформлению нет.
+                    </dd>
+                    <dt>type="url"</dt>
+                    <dd>
+                        Используется для ввода пользователем корректного url. Браузер требует
+                        чтобы ползователь ввел данные в формате http://domain.zone.
+                    </dd>
+                    <dt>type="number"</dt>
+                    <dd>
+                        Используется для ввода пользователем корректного числа. Браузер ограничивает
+                        ввод только числовыми значениями.
+                    </dd>
+                    <dt>type="color"</dt>
+                    <dd>
+                        Используется для отправки кода цвета. Отправляет значение цвета в
+                        шестнадцатеричном
+                        формате, например #80ff00.
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="" method="post">
+                <fieldset>
+                    <label for="email">Тип email</label>
+                    <input name="email" id="email" type="email">
+                    <br>
+
+                    <label for="tel">Тип tel</label>
+                    <input name="tel" id="tel" type="tel">
+                    <br>
+
+                    <label for="url">Тип url</label>
+                    <input name="url" id="url" type="url">
+                    <br>
+
+                    <label for="number">Тип number</label>
+                    <input name="number" id="number" type="number">
+                    <br>
+
+                    <label for="color">Тип color</label>
+                    <input name="color" id="color" type="color">
+                    <br>
+
+                    <input type="submit" value="Отправить информацию">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
