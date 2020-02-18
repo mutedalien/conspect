@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    background: #ccc;
+    padding: 20px;
+    grid-template-columns: 500px 200px 200px;
+    grid-template-rows: 200px 120px;
+
+    /*какую поставить высоту строки, если она явно не указана через grid-template-rows*/
+    grid-auto-rows: 100px;
+}
+
+.container div {
+    background: #dca7a7;
+    outline: 1px solid #000000;
+}

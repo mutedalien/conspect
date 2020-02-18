@@ -1,0 +1,47 @@
+.grid {
+    display: grid;
+    background: #e6e6e6;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        ". main voting"
+        "footer footer footer"
+
+}
+
+.grid > * {
+    outline: 1px solid #000;
+}
+
+header {
+    grid-area: header;
+    height: 140px;
+    background: lightblue;
+}
+
+nav {
+    grid-area: nav;
+    background: lightgreen;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.voting {
+    grid-area: voting;
+}
+
+footer {
+    grid-area: footer;
+    height: 100px;
+    background: grey;
+}

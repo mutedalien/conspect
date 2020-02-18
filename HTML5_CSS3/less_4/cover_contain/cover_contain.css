@@ -1,0 +1,19 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.forCover {
+    width: 500px;
+    height: 500px;
+    background: url('equipment.jpg');
+    background-size: cover;
+}
+
+.forContain {
+    width: 500px;
+    height: 500px;
+    background: url('equipment.jpg') no-repeat;
+    background-size: contain;
+}

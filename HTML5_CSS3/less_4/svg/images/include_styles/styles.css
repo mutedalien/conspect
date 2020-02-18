@@ -1,0 +1,10 @@
+svg {
+    background-color: #DF64BD;
+}
+
+#hand {
+    cursor: pointer;
+    fill: #B4F200;
+    stroke: #000;
+    stroke-width: 3px;
+}

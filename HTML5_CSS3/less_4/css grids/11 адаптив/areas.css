@@ -1,0 +1,72 @@
+.grid {
+    display: grid;
+    background: #e6e6e6;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        ". main voting"
+        "footer footer footer"
+
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "voting"
+            "footer"
+    }
+}
+
+.grid > * {
+    outline: 1px solid #000;
+}
+
+.grid > * {
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    height: 140px;
+    background: lightblue;
+}
+
+nav {
+    grid-area: nav;
+    background: lightgreen;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    /* aside {
+        display: none;
+    } */
+}
+
+.voting {
+    grid-area: voting;
+}
+
+footer {
+    grid-area: footer;
+    height: 100px;
+    background: grey;
+}

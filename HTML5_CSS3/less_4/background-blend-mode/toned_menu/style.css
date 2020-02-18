@@ -1,0 +1,62 @@
+.nav__item {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    background-color: skyblue;
+    background-blend-mode: luminosity;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.nav__item:hover {
+    background-blend-mode: normal;
+}
+.nav__item:before {
+    content: "";
+    display: inline-block;
+    height: 120px;
+    vertical-align: middle;
+}
+.nav__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 2.5rem;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.nav__item:hover:after {
+    height: 150px;
+    background: rgba(255, 255, 255, 0.4);
+}
+.nav__item span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    width: 90%;
+    font-size: 1.2em;
+    font-style: italic;
+    text-transform: capitalize;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.nav__item--home {
+    background-image: url(http://img-fotki.yandex.ru/get/5314/5091629.67/0_5ba15_745b5d41_orig.png);
+}
+.nav__item--blog {
+    background-image: url(http://img-fotki.yandex.ru/get/5413/5091629.67/0_5ba12_81d03a82_orig.png);
+}
+.nav__item--gallery {
+    background-image: url(http://img-fotki.yandex.ru/get/5413/5091629.67/0_5ba11_d4e50331_orig.png);
+}
+

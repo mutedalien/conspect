@@ -1,0 +1,18 @@
+.two,
+.one {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.one {
+    color: #ff1500;
+}
+
+.two {
+    position: relative;
+    top: -61px;
+    left: 8px;
+    mix-blend-mode: difference;
+    color: #ff57db;
+}

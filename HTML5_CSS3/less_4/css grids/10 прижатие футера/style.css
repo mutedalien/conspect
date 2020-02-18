@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 200px minmax(500px, 1fr) 200px;
+}
+
+header {
+    background: #ccc;
+}
+
+main {
+    background: lime;
+}
+
+footer {
+    background: rgb(163, 42, 99);
+}
