@@ -1,0 +1,17 @@
+div {
+    width: 128px;
+    height: 128px;
+    background: url('../ball.png') no-repeat;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

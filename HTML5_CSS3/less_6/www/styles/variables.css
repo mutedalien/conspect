@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+.container {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.buttonMixin {
+  background-color: #1a9bdc;
+  box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+  width: 166px;
+  height: 47px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 18.25px;
+}
+.buttonMixin:hover {
+  background-color: #37c3a8;
+  cursor: pointer;
+}

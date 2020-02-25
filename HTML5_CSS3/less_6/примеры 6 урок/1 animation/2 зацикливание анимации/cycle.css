@@ -1,0 +1,20 @@
+div {
+    width: 128px;
+    height: 128px;
+    background: url('../ball.png') no-repeat;
+    position: relative;
+    left: 0;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite | <число>*/
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

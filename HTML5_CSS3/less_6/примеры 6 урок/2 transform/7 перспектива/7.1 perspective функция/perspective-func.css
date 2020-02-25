@@ -1,0 +1,18 @@
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background:
+            url(../../linux.png) no-repeat,
+            url(../back.jpg);
+    background-size: contain;
+    transition-duration: 2s;
+}
+
+div:hover {
+    /*функция perspective указывает насколько сильно выражена
+    перспектива, чем меньше значение, тем эффект сильнее.*/
+    transform: perspective(300px) rotateY(50deg);
+}

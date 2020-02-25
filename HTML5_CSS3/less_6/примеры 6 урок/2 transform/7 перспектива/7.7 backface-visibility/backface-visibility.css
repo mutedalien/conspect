@@ -1,0 +1,28 @@
+body {
+    perspective: 500px;
+}
+
+div {
+    background: rgba(173, 255, 47, 0.55);
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+    top: 100px;
+    transform-style: preserve-3d;
+    transform: rotateY(30deg);
+}
+
+img {
+    width: 200px;
+    transition-duration: 2s;
+    /*Значение hidden скрывает оборотную сторону блока при
+    трансформации. Значение visible отсутствие свойства
+    как такового делает оборотную сторону блока при трансформации
+    видимой.*/
+    backface-visibility: hidden;
+}
+
+img:hover {
+    transform: rotateY(150deg);
+}

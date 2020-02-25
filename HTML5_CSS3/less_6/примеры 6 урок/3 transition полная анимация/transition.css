@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.root {
+    position: relative;
+    width: 98px;
+}
+
+.root:hover .leftMenu {
+    left: 0;
+}
+
+body > ul {
+    padding: 0;
+}
+
+div {
+    background: #ccc;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.leftMenu {
+    position: absolute;
+    left: -110px;
+    top: 48px;
+    padding: 0;
+    /*
+    left - какое свойство участвует в анимации, может задаваться отдельно так:
+    transition-property: left;
+
+    1s - сколько должна длиться анимация, может задаваться отдельно так:
+    transition-duration: 1s;
+
+    ease-out - одно из значений, определяющий как должна выполняться анимация,
+    может задаваться отдельно так:
+    transition-timing-function: ease-out;
+    Полный перечень анимация можно посмотреть здесь:
+    https://webref.ru/css/transition-timing-function
+
+    0.5s - задержка перед выполнением анимации, может быть задана отдельно так:
+    transition-delay: 0.5s;
+     */
+    transition: left 1s ease-out 0s;
+}
+
+.leftMenu > li {
+    padding: 15px 30px;
+    background: #cbeea6;
+    border-bottom: 1px solid #91aa77;
+}
+
+

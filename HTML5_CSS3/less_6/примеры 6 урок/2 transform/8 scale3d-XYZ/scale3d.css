@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.scale3d {
+    transition-duration: 2s;
+    background: url(back.jpg);
+}
+
+.scale3d:hover {
+    /*
+    scale3d изменяет масштаб в трех плоскостях x, y, z.
+    Без свойств perspective и rotateY|rotateX изменение по оси Z
+    не будет видно.
+    */
+    transform: perspective(500px) scale3d(1, 1, 10) rotateY(60deg);
+}
+
+.scaleX:hover {
+    transform: scaleX(2);
+    background: green;
+    transition-duration: 1s;
+}
+
+.scaleY:hover {
+    transform: scaleY(0.2);
+    background: #ff9202;
+    transition-duration: 1s;
+}
+
+.scaleZ:hover {
+    transform-origin: top;
+    /*
+    perspective и rotate здесь по тем же причинам, что описаны
+    выше
+     */
+    transform: perspective(500px) scaleZ(3) rotateX(20deg);
+    background: #e46aff;
+    transition-duration: 1s;
+}

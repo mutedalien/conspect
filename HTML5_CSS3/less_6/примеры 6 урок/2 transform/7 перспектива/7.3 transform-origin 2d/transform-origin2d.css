@@ -1,0 +1,19 @@
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    outline: 3px solid green;
+    background: url(../../linux.png) no-repeat;
+    background-size: contain;
+    /*Устанавливает координаты точки, относительно
+    которой будет происходить трансформация элемента.
+    <x> <y> */
+    transform-origin: left bottom;
+}
+
+div:hover {
+    transition-duration: 1s;
+    transform: rotateZ(30deg);
+}

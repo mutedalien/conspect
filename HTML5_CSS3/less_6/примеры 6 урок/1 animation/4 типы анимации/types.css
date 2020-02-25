@@ -1,0 +1,48 @@
+div {
+    width: 228px;
+    height: 228px;
+    background: url('../jet.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    /*Анимация начинается медленно, затем ускоряется и к концу движения опять замедляется.*/
+    /*animation-timing-function: ease;*/
+
+    /*Анимация медленно начинается, к концу ускоряется.*/
+    /*animation-timing-function: ease-in;*/
+
+    /*Анимация начинается быстро, к концу замедляется.*/
+    /*animation-timing-function: ease-out;*/
+
+    /*Анимация начинается и заканчивается медленно.*/
+    /*animation-timing-function: ease-in-out;*/
+
+    /*Одинаковая скорость от начала и до конца.*/
+    /*animation-timing-function: linear;*/
+
+    /*Как таковой анимации нет. Стилевые свойства сразу же принимают конечное значение.*/
+    /*animation-timing-function: step-start;*/
+
+    /*Как таковой анимации нет. Стилевые свойства находятся в начальном значении заданное
+    время, затем сразу же принимают конечное значение.*/
+    /*animation-timing-function: step-end;*/
+
+    /*Ступенчатая функция, имеющая заданное число шагов.*/
+    /*animation-timing-function: steps(9);*/
+
+    /*анимация на основе кривых Безье, поведение удобно
+    генерировать здесь http://cubic-bezier.com*/
+    animation-timing-function: cubic-bezier(.03,1.91,1,-0.65);
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

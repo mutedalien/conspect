@@ -1,0 +1,20 @@
+div {
+    width: 200px;
+    height: 150px;
+    background: url('../car.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

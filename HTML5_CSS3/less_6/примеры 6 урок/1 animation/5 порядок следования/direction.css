@@ -1,0 +1,32 @@
+div {
+    width: 200px;
+    height: 150px;
+    background: url('../car.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /*Анимация идёт с самого начала, после завершения цикла возвращается к исходному состоянию.*/
+    /*animation-direction: normal;*/
+
+    /*Анимация идёт с начала до конца, затем плавно возвращается в исходное положение.*/
+    /*animation-direction: alternate;*/
+
+    /*Анимация идёт с конца цикла, после его завершения возвращается к исходному состоянию.*/
+    /*animation-direction: reverse;*/
+
+    /*Анимация идёт с конца до начала, затем плавно возвращается в исходное положение.*/
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 80%;
+    }
+}

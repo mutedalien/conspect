@@ -1,0 +1,20 @@
+.parent {
+    /*Св-во определяет насколько сильно выражен эффект перспективы,
+    чем меньше значение, тем больше выражен эффект перспективы.*/
+    perspective: 200px;
+    background: #ccc;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    outline: 3px solid green;
+    background: url(../../linux.png) no-repeat;
+    background-size: contain;
+    transition-duration: 2s;
+}
+
+.parent:hover .child {
+    transform: rotateX(30deg);
+}

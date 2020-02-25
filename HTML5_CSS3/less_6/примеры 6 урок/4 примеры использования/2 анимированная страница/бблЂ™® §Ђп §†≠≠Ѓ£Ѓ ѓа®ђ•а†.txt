@@ -1,0 +1,8 @@
+Сами анимации
+	https://daneden.github.io/animate.css/
+
+Jquery
+	https://code.jquery.com/jquery-3.2.1.min.js
+
+Jquery-плагин viewport-checker
+	https://github.com/dirkgroenen/jQuery-viewport-checker

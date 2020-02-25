@@ -1,0 +1,18 @@
+button {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 5px;
+    font-family: "Arial Black", sans-serif;
+    background: #b7deed;
+    border: 1px solid #167998;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #21b4e2;
+    border: 1px solid #167998;
+    box-shadow: 0 2px 5px #333333;
+}

@@ -1,0 +1,38 @@
+div {
+    width: 128px;
+    height: 128px;
+    background: url('../ball.png') no-repeat;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+}
+
+@keyframes myAnimation {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+    }
+    20% {
+        left: 20%;
+        top: 200px;
+        background-color: green;
+    }
+    40% {
+        left: 40%;
+        top: 300px;
+        background-color: blue;
+    }
+    60% {
+        left: 60%;
+        top: 150px;
+    }
+    80% {
+        left: 80%;
+        top: 200px;
+    }
+    100% {
+        left: 50%;
+        top: 50px;
+    }
+}

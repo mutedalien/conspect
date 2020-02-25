@@ -1,0 +1,28 @@
+img {
+    transition-duration: 1s;
+}
+
+.linux1:hover {
+    /*deg - градусы*/
+    transition-duration: 1s;
+    transform: rotate(45deg);
+}
+
+.linux2:hover {
+    /*grad - один град это сотая часть прямого угла, соответственно
+    100grad = 90deg*/
+    transition-duration: 1s;
+    transform: rotate(100grad);
+}
+
+.linux3:hover {
+    /*https://ru.wikipedia.org/wiki/Радиан*/
+    transition-duration: 1s;
+    transform: rotate(3.14rad);
+}
+
+.linux4:hover {
+    /*вращение по часовой стрелке, 1turn - один полный оборот*/
+    transition-duration: 1s;
+    transform: rotate(0.5turn);
+}

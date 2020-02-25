@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.root {
+    position: relative;
+    width: 98px;
+}
+
+.root:hover .leftMenu {
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+body > ul {
+    padding: 0;
+}
+
+div {
+    background: #ccc;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.leftMenu {
+    position: absolute;
+    left: -110px;
+    top: 48px;
+    padding: 0;
+}
+
+.leftMenu > li {
+    padding: 15px 30px;
+    background: #cbeea6;
+    border-bottom: 1px solid #91aa77;
+}
+
+@keyframes show {
+    from {
+        left: -110px;
+    }
+    to {
+        left: 0;
+    }
+}
+
