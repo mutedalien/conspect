@@ -67,7 +67,7 @@ while($str <= 100){
     }
         $x = $td * $str; 
         $table .= "<td $style>$x</td>"; 
-        $td++; 
+        $td++; //см коммент в строке 55
     }
     $str++
     $table .= "</tr>"; 
