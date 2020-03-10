@@ -40,8 +40,3 @@ foreach($cars as $key => $value){ // Ключи - это марки, а value - 
 }
 
 ?>
-
-
-
-
-
