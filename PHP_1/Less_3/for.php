@@ -9,10 +9,10 @@ function deposit($money, $srok){ // Сумма вклада и срок
         echo "За $i год Ваша сумма составляет $money (прибыль = $p)<br>";
     }
 }
-
-$money = ($_GET['money'] ? (int) ($_GET['money']) : rand(100000,5000000)); 
-$srok = ($_GET['srok'] ? (int) ($_GET['srok']) : rand(1,5));
-deposit($money,$srok);
+// Примем параметры из адресной строки ($_GET)
+$money = ($_GET['money'] ? (int) ($_GET['money']) : rand(100000,5000000)); // Если парам не пустой, то присвоем переменной значение из адр строки, иначе присоим рандомное значение
+$srok = ($_GET['srok'] ? (int) ($_GET['srok']) : rand(1,5)); // То-же самое, что и с параметром money
+deposit($money,$srok); 
 
 // Пример continue в for
 for ($i = 1; $i <= 10; $i++){
