@@ -31,7 +31,7 @@ print_r($cars);
 
 foreach($cars as $key => $value){ // Ключи - это марки, а value - свойства
     if(is_array($value['price'])){ // is_array - функция проверки на массив
-        $p = implode("-",$value['price']); // Если значение - массив, то преобразуем в строку
+        $p = implode("-",$value['price']); // Если значение - массив, то преобразуем в строку ("-" дефис между ценами)
     }
     else{
         $p = $value['price'];
@@ -40,8 +40,3 @@ foreach($cars as $key => $value){ // Ключи - это марки, а value - 
 }
 
 ?>
-
-
-
-
-
