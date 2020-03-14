@@ -1,0 +1,24 @@
+.my-flex-container {
+    display: flex;
+}
+
+.my-flex-block {
+    background: #bfa3ff;
+    margin: 20px;
+}
+
+.my-flex-block:nth-child(1) {
+    order: 5;
+}
+.my-flex-block:nth-child(2) {
+    order: 10;
+}
+.my-flex-block:nth-child(3) {
+    order: 5;
+}
+.my-flex-block:nth-child(4) {
+    order: 5;
+}
+.my-flex-block:nth-child(5) {
+    order: 0;
+}

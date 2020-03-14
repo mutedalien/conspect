@@ -1,0 +1,20 @@
+.my-flex-container {
+    width: 1000px;
+    height: 300px;
+    background: #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-flex-block {
+    background: #323232;
+    outline: 2px solid #fff;
+    color: #fff;
+    height: 150px;
+    /*flex-grow, flex-shrink, flex-basis*/
+    flex: 1 1 100px;
+}
+
+.my-flex-block:nth-child(3) {
+    flex: 2 2 100px;
+}

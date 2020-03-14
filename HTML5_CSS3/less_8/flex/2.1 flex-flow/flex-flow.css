@@ -1,0 +1,17 @@
+.my-flex-container {
+    width: 600px;
+    background: #ccc;
+    height: 500px;
+    display: flex;
+
+    /*flex-direction flex-wrap*/
+    flex-flow: row wrap;
+}
+
+.my-flex-container > div {
+    width: 100px;
+    height: 100px;
+    background: #323232;
+    outline: 1px solid #fff;
+    color: #fff;
+}

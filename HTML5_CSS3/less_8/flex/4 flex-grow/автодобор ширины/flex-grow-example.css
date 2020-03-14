@@ -1,0 +1,16 @@
+form {
+    width: 400px;
+    background: #ccc;
+}
+
+p {
+    display: flex;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select {
+    flex-grow: 1;
+}

@@ -1,0 +1,31 @@
+.my-flex-container {
+    width: 650px;
+    height: 500px;
+    background: #ccc;
+    display: flex;
+
+    /*nowrap, wrap, wrap-reverse*/
+    flex-wrap: wrap;
+
+    /*row, column*/
+    flex-direction: row;
+
+    /*flex-start, flex-end, center, space-between, space-around, stretch*/
+    align-content: space-between;
+    /*если flex-direction: row, тогда align-content выравнивает ряды по вертикали. */
+
+    /*flex-start, flex-end, center, space-between, space-around*/
+    justify-content: center;
+}
+
+.my-flex-block {
+    /*если flex-direction: row и если сделать ширину недостаточной то
+    выравнивание не будет работать*/
+    width: 100px;
+
+    /*отключите высоту при align-content: stretch;*/
+    height: 120px;
+    background: #323232;
+    outline: 1px solid #fff;
+    color: #fff;
+}

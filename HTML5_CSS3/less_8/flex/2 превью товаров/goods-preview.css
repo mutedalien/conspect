@@ -1,0 +1,17 @@
+.my-flex-container {
+    width: 640px;
+    background: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-flex-block {
+    width: 200px;
+    height: 200px;
+    background: #323232;
+    outline: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 20px;
+}
