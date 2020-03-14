@@ -2,14 +2,9 @@
 ?>
 
 <html>
-  <head><title>Первая страница на php</title></head>
+  <head><title>пример</title></head>
   <body>
-    <?php
-      echo 'Hello, world!<br>';
-      echo '2 + 5 = ';
-      echo (2 + 5);
-    ?>
-
+ 
  <?php
   $host = 'localhost';  // Хост, у нас все локально
   $user = 'user_bd';    // Имя созданного вами пользователя
