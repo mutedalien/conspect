@@ -1,11 +1,11 @@
 <?php
-
+// Рабочий пример
 class TemplateSite{
     function header(){
         echo "Шапка сайта";
     }
     function footer(){
-        echo "Шапка сайта";
+        echo "Подвал сайта";
     }
 }
 
@@ -14,7 +14,7 @@ class Site{
         echo "Контент сайта";
     }
     
-    function render(TemplateSite $template){
+    function render(TemplateSite $template){ // render - отобразить страничку
         $template->header();
         $this->content();
         $template->footer();
