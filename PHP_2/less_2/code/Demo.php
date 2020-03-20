@@ -35,7 +35,7 @@ class Admin{
 
 //
 //class Demo{
-//    function test(Main $obj){
+//    function test(Main $obj){ // ожидаем объект класса Main (строка 44)
 //        //$obj = new Main;
 //        return $obj->getName();
 //    }
@@ -51,4 +51,4 @@ class Admin{
 //
 //$d = new Demo;
 //$m = new Main;
-//echo $d->test($m);
+//echo $d->test($m); // получим Ivan
