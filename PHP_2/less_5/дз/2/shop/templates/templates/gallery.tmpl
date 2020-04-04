@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="css/style.css"></head>
+  <body>
+        <div class = "gallery">
+        {% for item in gallery %}
+
+        <a class='gallery_item' href = "photo.php?id={{ item.id }}" target='_blank'>
+        <img data-src = $src src = {{ item.mini_dir }}/{{ item.mini_name }} alt = 'gallery_image'>
+        <h3 class='product_name'>{{ item.product_name }}</h3>
+        <h3 class='product_price'>${{ item.price }}</h3></a>
+
+        {% endfor %}
+        </div>
+
+        <form action="#" method= "POST">
+            <button id="get_gallery" class="red-button">Получить 5 изображений</button>
+        </form>
+        <a href="../engine/clearSession.php">Вернуть исходный вид</a>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/main.js"></script>
+  </body>
+</html>
