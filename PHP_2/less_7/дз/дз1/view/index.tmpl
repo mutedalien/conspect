@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Главная</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<style>
+.menu li
+{
+background-color:#C5007F;
+}
+.menu li:nth-child(1) 
+{
+font-weight:bold;
+background-color:#9C0065;
+}
+</style>
+</head>
+<script>
+</script>
+<body>
+	<div class="phoneBar">
+		<img src='../assets/images/phone.png' width="120px;">
+	</div>	
+	{% include 'header.tmpl' %}
+	<content>
+		<div class="mainBox">
+			<div class="SideBar">			
+					<ul class="menu">
+						<li><a href="#">Главная</a></li>
+						<li><a href="index.php?path=catalog/show">Каталог</a></li>					
+						<li><a href="index.php?path=contacts/show">Контакты</a></li>	
+					</ul>
+			</div >	
+			<div  class="SpaceBar">	
+			</div>	
+			<div  class="Content">
+					<div class="BannerBox">		
+						<image src='../assets/images/main1-940x446_04.png' width='700px' height="300px">	
+					</div>	
+					<div class="ItemBox">	
+						{% for product in contentData %}
+							<div class="productCard">		
+								<div class='Itemphoto'>
+									<a href="index.php?path=product/show/{{product.id}}">
+										<image src='../{{product.src}}'>										
+									</a>
+								</div>
+								<div class='ItempName'>
+									<p>{{product.title}}</p>
+								</div>
+								<div class='ItempPrice'>
+									<p>{{product.price}} руб</p>
+								</div>						
+							</div>
+						{% endfor %}
+					</div>								
+					<div class="BannerBox">		
+						<image src='../assets/images/main1-940x446_02.png' width='700px' height="300px">	
+					</div>
+		
+			</div>
+		</div>
+	</content>
+	{% include 'footer.tmpl' %}	
+</body>
+</html>

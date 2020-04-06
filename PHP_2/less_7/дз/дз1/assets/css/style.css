@@ -1,0 +1,603 @@
+*,ul
+{
+margin:0px;
+padding:0px;
+}
+
+body {
+
+background: rgba(212,228,239,1);
+background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+
+
+}
+/* Хедер */
+.headerMenu
+{
+
+height:60px;
+background:#C5007F;
+padding:10px 20px;
+border:1px red solid;
+}
+
+.headerBox
+{
+width:1000px;
+height:110px;
+background:#C5007F;
+margin:auto;
+border-radius:8px;
+}
+.navbar 
+{
+padding:0px 20px; 
+min-width:1000px;
+vertical-align:middle;
+border-radius:8px;
+}
+.navbar td
+{
+vertical-align:middle;
+text-align:center;
+}
+.navbar td a
+{
+text-decoration:none;
+}
+
+.AdminBar
+{
+overflow:hidden;
+width:1000px;
+height:30px;
+margin:auto;
+text-align:right;
+}
+
+.basket
+{
+color:white;
+border-radius:8px;
+border:1px white solid;
+width:190px;
+height:30px;
+padding-top:15px;
+background:url(../images/buscket.png) no-repeat 10% center;
+color:white;
+font-family:Arial;
+font-size:16px;
+margin-left:-20px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.basket:hover
+{
+border:1px orange solid;
+color:black;
+background:url(../images/buscketA.png) no-repeat 10% center;
+background-color:white;
+}
+
+.phoneBar
+{
+position:fixed;
+bottom:50px;
+right:200px;
+}
+
+
+.phoneBar img
+{
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease-in-out;
+}
+.phoneBar img:hover
+{
+ filter: drop-shadow(0 0 0.75rem lime);
+}
+
+@keyframes slidein {
+  from {
+	transform:rotate(-10deg);
+  }
+	
+  50%	{
+	transform:rotate(30deg);
+	}
+  
+  to {
+	transform:rotate(-10deg);
+  }
+}
+/* Хедер конец */
+/* меню */
+.menu li
+{
+list-style:none;
+padding:20px 20px;
+background-color:#C5007F;
+border-radius:8px;
+margin-bottom:10px;
+
+}
+
+.menu li:hover
+{
+background-color:#9C0065;
+color:red;
+}
+.menu li a
+{
+color:white;
+font-family:Arial;
+font-size:14px;
+text-decoration:none;
+}
+
+.Content
+{
+width:750px;
+min-height:600px;
+float:left;
+background-color:#fffadf;
+border-radius:8px;
+}
+
+.SpaceBar
+{
+width:20px;
+min-height:1px;
+float:left;
+}
+.SideBar
+{
+width:200px;
+height:100px;
+float:left;
+}
+
+.mainBox
+{
+display: table;
+width:978px;
+margin:auto;
+margin-top:20px;
+padding:20px 10px;
+background-color:#fff4b9;
+border-radius:8px;
+}
+
+
+/*карточка продукта */
+.productCard
+{
+width:220px;
+margin-right:18px;
+margin-top:25px;
+margin-bottom:25px;
+height:300px;
+border:1px #fdee98 dotted;
+float:left;
+text-align:center;
+padding-top:10px;
+background-color:#fff4b9;
+border-radius:8px;
+}
+
+.productCard a img
+{
+max-width:200px;
+max-height:180px;
+}
+
+.productCard:hover
+{
+background-color:#fdee98;
+border:1px #c1b574 dotted;
+}
+
+.ItempName
+{
+font-family:Arial;
+color:#C5007F;
+font-size:16px;
+font-weight:bold;
+}
+
+.ItempPrice
+{
+margin-top:10px;
+font-family:Arial;
+}
+
+.ItemBuy
+{
+width:100px;
+margin:auto;
+padding:5px 10px; 
+border:1px #c1b574 solid;
+margin-top:10px;
+background-color:rgb(255, 255, 255);
+border-radius:8px;
+font-family:Arial;
+font-size:12px;
+}
+
+.ItemBuy:hover
+{
+margin-top:10px;
+background-color:#C5007F;
+color:white;
+}
+
+.Itemphoto
+{
+height:180px;
+font-family:Arial;
+}
+.Itemphoto a
+{
+text-decoration:none;
+}
+
+
+/*карточка продукта конец */
+.BannerBox
+{
+width:700px;
+margin:10px;
+margin-left:25px;
+height:300px;
+border:1px green solid;
+float:left;
+
+}
+
+.ItemBox
+{
+width:725px;
+margin:10px;
+margin-left:23px;
+float:left;
+
+}
+
+.OrderControl
+{
+width:690px;
+height:250px;
+margin:20px;
+margin-left:23px;
+float:left;
+background-color:#fff4b9;
+border-radius:4px;
+}
+
+form  input
+{
+padding:5px 5px;
+}
+.btnD 
+{
+text-align:center;
+text-decoration:none;
+width:150px;
+background-color:#C5007F;
+border-radius:8px;
+border:1px #9C0065 solid;
+padding:10px 10px;
+font-size:18px;
+font-weight:bold;
+font-family:Arial;
+color:white;
+display:inline-block;
+}
+.OrderTable
+{
+margin:auto;
+
+
+}
+
+
+.btnD:hover
+{
+background-color:#9C0065;
+border:1px white solid;
+}
+.OrderBox
+{
+width:690px;
+height:800px;
+margin:10px;
+margin-left:23px;
+float:left;
+overflow:scroll;
+background-color:#fff4b9;
+padding:10px 10px;
+border-radius:4px;
+
+}
+
+.DescBox
+{
+width:725px;
+margin:10px;
+margin-left:23px;
+float:left;
+
+font-family:Arial;
+}
+
+.text_desc
+{
+margin:10px 5px;
+border-radius:8px;
+background-color:#fff4b9;
+padding:10px 10px;
+
+}
+
+.tth
+{
+margin:10px 10px;
+font-family:Arial;
+background-color:#fff4b9;
+padding:10px 10px;
+}
+
+.buttonBT
+{
+border:1px orange solid;
+color:black;
+background-color:white;
+width:100px;
+margin:auto;
+
+}
+
+.ButtSend
+{
+border:1px white solid;
+color:white;
+background-color:green;
+width:100px;
+border-radius:8px;
+padding:10px 10px;
+font-size:16px;
+font-family:Arial;
+font-weight:bold;
+text-align:center;
+}
+
+.OrderTable
+{
+font-size:16px;
+font-family:Arial;
+font-weight:bold;
+text-align:center;
+}
+
+.ButtSend:hover
+{
+border:1px green solid;
+color:green;
+background-color:white;
+}
+
+.logo_nav
+{
+padding-left:50px;
+vertical-align:middle;
+
+
+}
+.form_nav
+{
+width:500px;
+padding-left:10px;
+}
+
+
+/* меню конец*/
+/* Подвал */
+.FooterL
+{
+width:1000px;
+height:50px;
+margin:auto;
+text-align:right;
+font-size:16px;
+font-family:Arial;
+}
+.FooterR
+{
+width:1000px;
+margin:auto;
+text-align:left;
+overflow:hidden;
+}
+
+.footer
+{
+background: rgba(212,228,239,1);
+background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+}
+
+.menuF
+{
+padding:10px 10px;
+border-radius:8px;
+margin-bottom:10px;
+float:left;
+}
+.menuFA
+{
+padding:10px 10px;
+border-radius:8px;
+margin-bottom:10px;
+float:left;
+}
+
+.menuFA li
+{
+list-style:none;
+padding:5px 8px;
+border-radius:8px;
+margin-bottom:10px;
+font-family:Arial;
+font-variant:underline;
+}
+
+.menuFA li:nth-child(2)
+
+{
+float:left;
+background:url(../images/iconF_W.jpg) no-repeat center;
+}
+
+.menuFA li:nth-child(2):hover
+{
+background:url(../images/iconF_B.jpg) no-repeat center;
+}
+.menuFA li:nth-child(3)
+{
+float:left;
+background:url(../images/iconV_W.jpg) no-repeat center;
+}
+
+.menuFA li:nth-child(3):hover
+{
+background:url(../images/iconV_B.jpg) no-repeat center;
+}
+
+.menuFA li:nth-child(4)
+{
+float:left;
+background:url(../images/iconY_W.jpg) no-repeat center;
+}
+
+.menuFA li:nth-child(4):hover
+{
+background:url(../images/iconY_B.jpg) no-repeat center;
+}
+
+.menuF li
+{
+list-style:none;
+padding:5px 8px;
+border-radius:8px;
+margin-bottom:10px;
+font-family:Arial;
+
+}
+
+.menuF li a
+{
+text-decoration: none;
+color:#353535;
+}
+.menuFA  li a
+{
+text-decoration: none;
+color:#353535;
+}
+
+.menuF li a:hover
+{
+text-decoration: wavy underline;
+color:orange;
+}
+
+.menuFA li a:hover
+{
+text-decoration: wavy underline;
+color:orange;
+}
+
+.menuF li:nth-child(1)
+{
+font-weight:bold;
+font-size:20px;
+}
+
+.menuFA  li:nth-child(1)
+{
+
+font-weight:bold;
+font-size:20px;
+}
+
+.AdminForm
+{
+margin-left:200px;
+height:600px;
+}
+
+textarea {
+  resize: none;
+}
+
+.productItem
+{
+width:712px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:8px;
+vertical-align:middle;
+text-align:center;
+background-color:#fff4b9;
+border-radius:8px;
+padding-top:50px;
+padding-bottom:50px;
+}
+.BusketTable
+{
+vertical-align:middle;
+text-align:center;
+border-radius:8px;
+font-family:Arial;
+
+}
+
+.BusketTable td
+{
+margin:10px;
+border:1px green solid;
+background-color:#fff4b9;
+border-radius:4px;
+padding:10px 15px;
+margin-left:50px;
+
+}
+
+.BusketTable td:hover
+{
+background-color:#fff488;
+}
+
+.BusketTable a
+{
+text-decoration:none;
+}
+.DelItem
+{
+cursor:pointer;
+}
+/* Подвал конец */
