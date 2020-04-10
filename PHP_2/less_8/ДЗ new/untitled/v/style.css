@@ -1,0 +1,400 @@
+body *{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+}
+
+header{
+	text-align: center;
+	font-weight: 800;
+	font-size: 30px;
+	margin: 5vh 0;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center
+}
+
+.content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 5rem;
+}
+
+.content_list{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2vw;
+	justify-items: center;
+}
+
+.content_list > li{
+	list-style-type: none;	
+}
+
+.link{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	-ms-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	transition: 300ms ease-in-out;
+}
+
+.link:hover{
+	text-decoration: none;
+	color: purple;
+}
+
+.img_views{
+	font-size: 14px;
+}
+
+.img_price{
+	font-size: 30px;
+}
+.good_name{
+	font-size: 30px;
+	color: black;
+}
+
+.product_img{
+	height: 25vh;
+	object-fit: contain;
+}
+
+.pages_counter{
+	position: absolute;
+	right: 3rem;
+	bottom: -1rem;
+}
+
+.page_link, .page_link:hover{
+	text-decoration: none;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.page_number{
+	width: 1.5rem;
+}
+.page_number:focus{
+	outline: none;
+}
+
+.selected_page{
+	background-color: #81837C;
+}
+
+.more{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.more_btn{
+	width: 60%;
+}
+
+.modal_div {
+	width: 100%;
+	height: 70vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.modal_div img {
+	height: 100%;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.modal_exit {
+	align-self: flex-start;
+	position: absolute;
+	top: 2vh;
+	right: 2vw;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.modal_exit:focus {
+	outline: none;
+}
+
+.footer_content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.hidden {	
+	display: none;
+}
+
+.blur {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);	
+}
+
+.cart_btn {
+	position: absolute;
+	right: 20%;
+}
+
+.cart-count{
+	position: absolute;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 0.9rem;
+	font-size: 0.9rem;
+	width: 1rem;
+	height: 1rem;
+	top: 0;
+	right: 0;
+}
+
+.user-cabinet-div{
+	position: absolute;
+	left: 10%;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+.cabinet-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 30vh;
+	justify-content: space-around;
+}
+
+.user_link{
+	margin-right: 1rem;
+}
+.guest_link{	
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.cart-body{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.cart_img{
+	object-fit: contain;
+	height: 7rem;
+}
+
+.cart-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+}
+
+.cart-good_info{	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+}
+
+.cart-price-div{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	-ms-align-items: center;
+	align-items: center;
+	width: 100%;
+	padding: 0 1rem;
+}
+
+.cart-good_name{
+	font-size: 30px;
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+	margin-right: 40%;
+}
+
+.cart-good_price{
+	font-size: 20px;
+	margin-left: 20%;
+}
+
+.cart-total{
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+	font-size: 30px;	
+}
+
+.delete_btn{
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	text-transform: uppercase;
+}
+
+.btn-calc {
+	position: absolute;
+	left: 20%;
+}
+
+.calculator {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 50%;
+	margin: 2rem auto;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #C6E0E0;
+	padding: 2rem 5rem;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.calc_result{
+	background-color: #C6E0E0;
+	position: relative;
+	left: 30%;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.calc_input{
+	width: 2rem;
+}
+
+.calc_int1, .calc_int2{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	height: 4rem;
+}
+
+.calc_action{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0 5rem;
+}
+
+.calc-btn{
+	margin: 0.5rem 0;
+}
+
+.calc-exit-form {
+	width: 100%;
+	position: relative;
+}
+
+.exit-btn{
+	position: relative;
+	left: 60%;
+}
+
+#cabinetLabel{
+    margin: 0 auto;
+}
+
+.modal-title{
+    margin-left: auto;
+}
+
+.cart{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.ordered{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}

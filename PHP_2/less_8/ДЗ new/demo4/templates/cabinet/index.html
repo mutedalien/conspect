@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+
+
+<div id="content">
+    {% if content_data.isAdmin == 'admin'%}
+    {% include 'cabinet/admin.html' %}
+    {% else %}
+    {% include 'cabinet/user.html' %}
+    {% endif %}
+</div>
+{% include 'footer.html' %}
