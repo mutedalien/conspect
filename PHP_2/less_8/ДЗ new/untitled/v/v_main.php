@@ -1,0 +1,1 @@
+{% include 'v_header.php' %}	<div id="content">		{{ content|raw }}	</div>{% include 'v_footer.php' %}

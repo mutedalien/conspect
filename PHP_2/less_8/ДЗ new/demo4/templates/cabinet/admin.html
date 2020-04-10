@@ -1,0 +1,54 @@
+<table class="table col-md-10 m-auto">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="id">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="idR">&#8593;</a>
+            Номер заказа
+        </th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="name">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="nameR">&#8593;</a>
+            Имя
+        </th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="goodName">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="goodNameR">&#8593;</a>
+            Название
+        </th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="price">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="priceR">&#8593;</a>
+            Цена
+        </th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="count">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="countR">&#8593;</a>
+            кол-во
+        </th>
+        <th>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="time">&#8595;</a>
+            <a href="/public/index.php?path=cabinet" class="sort" data-id="timeR">&#8593;</a>
+            Время
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for key, good in content_data.data %}
+    <tr>
+        <th scope="row">{{loop.index}}</th>
+        <td>{{good.id}}</td>
+        <td>{{good.name}}</td>
+        <td>{{good.nameFull}}</td>
+        <td>{{good.price}} руб.</td>
+        <td>{{good.count}}</td>
+        <td>{{good.date}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<div class="alert alert-info col-md-10 m-auto text-center" role="alert">
+    <strong>Список всех заказов</strong>
+</div>

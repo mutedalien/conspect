@@ -1,0 +1,1 @@
+<?phpfunction __autoload($classname){	include_once("c/$classname.php");}$action = 'action_';$action .= (isset($_GET['act'])) ? $_GET['act'] : 'index';if (isset($_GET['c'])) {    $class = 'C_'.$_GET['c'];    $controller = new $class();} else {	$controller = new C_page();}$controller->Request($action);

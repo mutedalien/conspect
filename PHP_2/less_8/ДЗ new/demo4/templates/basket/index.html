@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+
+
+{% for key, good in content_data %}
+<!--{{key}}-->
+<!--{{user.id}}-->
+<!--{{user.count}}-->
+{% endfor %}
+<div id="basketList">
+    {% include 'basket/renderBasket.html' %}
+</div>
+
+{% if isAuth %}
+
+<div class="m-center" style="display: flex; margin-top: 15px;">
+    <a href="index.php/?path=basket/order" class="btn col-md-1 btn-primary m-auto">Заказать</a>
+</div>
+{% else %}
+<form class=" col-md-5 m-auto" style="display: block; padding-top: 35px;" action="index.php/?path=basket/orderNotReg"
+      method="post">
+    <div class="form-group">
+        <input type="name" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp"
+               placeholder="Enter name">
+    </div>
+
+    <div class="m-center" style="display: flex; margin-top: 15px;">
+        <button type="submit" class="btn col-md-4 btn-primary m-auto">Заказать</button>
+    </div>
+</form>
+
+{% endif %}
+
+
+{% include 'footer.html' %}

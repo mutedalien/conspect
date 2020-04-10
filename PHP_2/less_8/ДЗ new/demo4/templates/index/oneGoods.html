@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+
+
+<div id="content">
+    <div class="col-md-6 m-auto">
+        <div class="card ">
+            <img class="card-img-top" src="img/{{content_data.bigPhoto}}" alt="...">
+            <div href="index.php?path=index/oneGoods/{{listAll.id}}" class="card-header">
+                {{content_data.nameFull}}
+            </div>
+            <div class="card-body">
+                <p class="card-p"> {{content_data.param}} </p>
+                <div>{{content_data.price}}$</div>
+                <a href="#" class="btn btn-primary btnOfGood" data-id="{{content_data.id}}">В корзину</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include 'footer.html' %}
