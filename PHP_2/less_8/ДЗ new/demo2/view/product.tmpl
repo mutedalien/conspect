@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Главная</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<style>
+.menu li
+{
+background-color:#C5007F;
+}
+.menu li:nth-child(1) 
+{
+font-weight:bold;
+background-color:#9C0065;
+}
+</style>
+</head>
+<script src='../assets/js/jquery-3.3.1.min.js'></script>
+<body>
+	<div class="phoneBar">
+		<img src='../assets/images/phone.png' width="120px;">
+	</div>	
+	{% include 'header.tmpl' %}
+	<content>
+		<div class="mainBox">
+			<div class="SideBar">			
+					<ul class="menu">
+						<li><a href="index.php?path=index">Главная</a></li>
+						<li><a href="index.php?path=catalog/show">Каталог</a></li>					
+						<li><a href="index.php?path=contacts/show">Контакты</a></li>	
+					</ul>
+			</div >	
+			<div  class="SpaceBar">	
+			</div>	
+			<div  class="Content">
+				<div class="ItemBox">							
+					<table class="productItem">		
+						<tr>
+							<td>
+							<div class='Itemphoto'>
+								<a href="../{{contentData[0].src}}">
+									<image src='../{{contentData[0].src}}' height='180px'>									
+									</a>
+							</div>
+							</td>
+							<td>
+							<div class='ItempName'>
+									<p>{{contentData[0].title}}</p>
+							</div>
+							<div class='ItempPrice'>
+									<p>Цена {{contentData[0].price}} р </p>
+							</div>
+								<div onclick='AddToBusket({{contentData[0].id}});' class='ItemBuy'>					
+									<p>Добавить в корзину</p>
+								</div>		
+							</td>
+						</tr>		
+					</table>
+				</div>
+				<div class="DescBox">								
+					<h3>Описание</h3> 
+					<br>	
+					<h2>{{contentData[0].title}}</h2>	
+					<br>		
+					<p class="text_desc">{{contentData[0].shortdesc}}</p>						
+					<br>																		
+				</div>		
+			</div>
+		</div>
+	</content>
+	{% include 'footer.tmpl' %}	
+</body>
+<script src='../assets/js/AjaxBusket.js'></script>
+</html>
