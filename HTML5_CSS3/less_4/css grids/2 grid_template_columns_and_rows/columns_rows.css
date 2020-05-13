@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    background: #ccc;
+    padding: 20px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+
+    /* rows/columns */
+    /*grid-template: 100px 100px / 200px 200px 200px;*/
+}
+
+.grid div {
+    background: #dca7a7;
+    outline: 1px solid #000000;
+}
+

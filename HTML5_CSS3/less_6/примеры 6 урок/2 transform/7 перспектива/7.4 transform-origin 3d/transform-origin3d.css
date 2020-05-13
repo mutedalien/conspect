@@ -1,0 +1,21 @@
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    outline: 3px solid green;
+    background: url(../../linux.png) no-repeat;
+    background-size: contain;
+    /*
+    координаты точки, относительно которой происходит трансформация
+    элемента
+    <x>, <y>, <z>
+    */
+    transform-origin: 7px 84px -200px;
+}
+
+div:hover {
+    transition-duration: 3s;
+    transform: perspective(182px) rotateY(30deg);
+}

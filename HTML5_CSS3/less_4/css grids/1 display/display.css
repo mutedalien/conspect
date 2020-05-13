@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    background: #ccc;
+    padding: 20px;
+}
+
+.grid div {
+    background: #dca7a7;
+    outline: 1px solid #000000;
+}
+
+.inline-grid {
+    margin-top: 50px;
+    background: #b2dba1;
+    display: inline-grid;
+    padding: 20px;
+}
+
+.inline-grid div {
+    background: #f0ad4e;
+    outline: 1px solid #000000;
+}

@@ -1,0 +1,35 @@
+body {
+    perspective: 500px;
+}
+
+div {
+    background: rgba(173, 255, 47, 0.55);
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+    top: 100px;
+    /* 1) Здесь данный div изначально трансформирован сам по себе,
+    т.е. на странице он повернут.
+    2) Причем повернут с учетом перспективы, которая прописана
+    в body.
+    3) свойство transform-style, прописанное в родителе управляет
+    тем будет ли содержимое в свою очередь трансформироваться в 3d
+    пространстве. Т.е. изначально содержимое трансформируется в 2d,
+    попробуйте выключить св-во transform-style или сделать его
+    равным flat.
+    */
+
+    /*preserve-3d | flat*/
+    transform-style: preserve-3d;
+    transform: rotateY(30deg);
+}
+
+img {
+    width: 200px;
+    transition-duration: 2s;
+}
+
+img:hover {
+    transform: rotateY(50deg);
+}

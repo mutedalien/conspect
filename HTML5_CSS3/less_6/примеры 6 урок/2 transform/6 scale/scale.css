@@ -1,0 +1,5 @@
+img:hover {
+    /*масштаб по оси x, масштаб по оси y*/
+    transform: scale(2, 1.5);
+    transition-duration: 1s;
+}

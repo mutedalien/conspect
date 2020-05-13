@@ -1,0 +1,15 @@
+.tall,
+.wide {
+    border: 1px solid black;
+    background: #81ff6f;
+}
+
+.tall {
+    width: 400px;
+    height: 1000px;
+}
+
+.wide {
+    width: 800px;
+    height: 100px;
+}

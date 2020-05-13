@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    background: #ccc;
+    padding: 20px;
+    grid-gap: 20px;
+
+    grid-template-columns: repeat(4, 1fr 2fr 40px);
+}
+
+.grid div {
+    background: #dca7a7;
+    outline: 1px solid #000000;
+}
+

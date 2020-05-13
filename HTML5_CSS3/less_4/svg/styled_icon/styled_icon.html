@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styled_icon.css">
+</head>
+<body>
+<svg width="0" height="0">
+    <defs>
+        <path id="home"
+              d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"
+              transform="translate(2, 2) scale(.95)"/>
+
+        <pattern id="design" width="300" height="300"
+                 patternUnits="userSpaceOnUse">
+            <image xlink:href="icon_back.jpg" width="200"
+                   height="200"/>
+        </pattern>
+    </defs>
+</svg>
+
+
+<div class="icons-design">
+    <div class="icon">
+        <svg viewbox="0 0 100 100">
+            <use xlink:href="#home"/>
+        </svg>
+    </div>
+</div>
+
+</body>
+</html>

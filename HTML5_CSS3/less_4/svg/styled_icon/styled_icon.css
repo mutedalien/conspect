@@ -1,0 +1,22 @@
+body {
+    background: url('body_back.png');
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    stroke: rgba(0, 0, 0, 0.3);
+    stroke-width: 6;
+    transition: .2s;
+}
+.icon:hover {
+    stroke-width: 4;
+}
+
+.icons-design {
+    fill: url('#design');
+}
+.icons-design .icon:hover {
+    fill: none;
+    stroke: url('#design');
+}

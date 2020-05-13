@@ -1,0 +1,5 @@
+{% if content_data.isAdmin == 'admin'%}
+{% include 'cabinet/admin.html' %}
+{% else %}
+{% include 'cabinet/user.html' %}
+{% endif %}

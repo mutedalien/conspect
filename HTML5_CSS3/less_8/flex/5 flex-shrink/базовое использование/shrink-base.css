@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background: #ffa00c;
+}
+
+.right {
+    background: #08cc0f;
+    flex-shrink: 0;
+    /*оба свойства width и flex-basis в данном случае одинаково работают*/
+    /*width: 200px;*/
+    flex-basis: 200px;
+}

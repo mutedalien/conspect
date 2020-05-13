@@ -1,0 +1,11 @@
+.one {
+    width: calc(100% - 200px);
+    height: 400px;
+    background: #2fd8ff;
+}
+
+.two {
+    width: 200px;
+    height: 200px;
+    background: hsl(127, 100%, calc(65% - 50%));
+}

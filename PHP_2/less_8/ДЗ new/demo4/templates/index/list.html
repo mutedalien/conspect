@@ -1,0 +1,18 @@
+<div class="row justify-content-center">
+    {% for key, listAll in content_data %}
+    <div class="col-md-3 m-1">
+        <div class="card ">
+            <img class="card-img-top" src="img/{{listAll.miniPhoto}}" alt="...">
+            <a href="index.php?path=index/oneGoods/{{listAll.id}}" class="card-header">
+                {{listAll.nameFull}}
+            </a>
+            <div class="card-body">
+                <p class="card-p"> {{listAll.param}} </p>
+                <div>{{listAll.price}} руб.</div>
+                <a href="" class="btn btn-primary btnOfGood" data-id="{{listAll.id}}">В
+                    корзину</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

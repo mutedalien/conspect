@@ -1,0 +1,23 @@
+.my-flex-container {
+    width: 800px;
+    height: 800px;
+    background: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-flex-block {
+    /*
+    1. Определяет базовый размер отдельно взятого блока по основной оси
+    2. если родитель имеет свойство flex-direction: row, тогда это свойство
+    будет определять ширину данного блока
+    3. если родитель имеет свойство flex-direction: column, тогда это
+    свойство будет определять высоту данного блока
+    */
+    flex-basis: 200px;
+    background: #323232;
+    outline: 1px solid #fff;
+    color: #fff;
+}

@@ -1,0 +1,4 @@
+img:hover {
+    transform: rotateX(60deg);
+    transition-duration: 1s;
+}

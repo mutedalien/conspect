@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Автодополнение</title>
+    </head>
+    <body>
+        <header>
+            <div class="floatFigure">
+                <img src="images/html5css3.png" alt="html5 css3">
+            </div>
+            <h1>HTML5 & CSS3</h1>
+        </header>
+
+        <nav>
+            <a href="autocomplete.html">Автодополнение</a>
+            <a href="date_formats.html">Атрибут type для работы с датами</a>
+            <a href="other_formats.html">Другие атрибуты type</a>
+            <a href="pattern_autofocus.html">Атрибуты pattern и autofocus</a>
+            <a href="type_image.html">Type image</a>
+            <a href="type_range.html">Type range</a>
+        </nav>
+
+        <div id="content">
+            <div>
+                <h1>На этой странице представлен пример работы тега datalist.</h1>
+                <dl>
+                    <dt>Атрибут list для input и тег datalist.</dt>
+                    <dd>
+                        Образуют связку, которая позволяет при вводе значения в input получить
+                        варианты
+                        автодополнения и выбрать из них подходящий.
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="" method="post">
+                <label for="fruit">Фрукт</label>
+                <input id="fruit" list="fruits" name="myFruits">
+                <datalist id="fruits">
+                    <option label="Яблоко" value="apple">
+                    <option label="Ананас" value="pineapple">
+                    <option label="Абрикос" value="apricot">
+                    <option label="Арбуз" value="watermelon">
+                    <option label="Авокадо" value="avocado">
+                    <option label="Апельсин" value="orange">
+                </datalist>
+
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

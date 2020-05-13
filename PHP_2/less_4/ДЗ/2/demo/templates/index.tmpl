@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title|title }}</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="main">
+    <div class="post_title"><h2>{{ title|title }}</h2></div>
+    <div class="gallery">
+        {% for img in images %}
+		
+            <a rel="gallery" class="photo" href="{{ big_img_src }}{{ img.name|escape }}{{img}}"><img
+                        src="{{ small_img_src }}{{ img.name|escape }}{{img}}" width="{{ img.width|escape }}"
+                        height="{{ img.height|escape }}" title="{{ img.name|escape }}"/></a>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Атрибут type для работы с датами</title>
+    </head>
+    <body>
+        <header>
+            <div class="floatFigure">
+                <img src="images/html5css3.png" alt="html5 css3">
+            </div>
+            <h1>HTML5 & CSS3</h1>
+        </header>
+
+        <nav>
+            <a href="autocomplete.html">Автодополнение</a>
+            <a href="date_formats.html">Атрибут type для работы с датами</a>
+            <a href="other_formats.html">Другие атрибуты type</a>
+            <a href="pattern_autofocus.html">Атрибуты pattern и autofocus</a>
+            <a href="type_image.html">Type image</a>
+            <a href="type_range.html">Type range</a>
+        </nav>
+
+        <div id="content">
+            <div>
+                <h1>На этой странице основными нововведениями являются временные типы для атрибута
+                    type.</h1>
+                <dl>
+                    <dt>type="date"</dt>
+                    <dd>
+                        Используется для ввода пользователем даты. Включает в себя год, месяц и
+                        день.
+                        Отправляет на сервер строку в формате: 2017-02-25.
+                    </dd>
+                    <dt>type="time"</dt>
+                    <dd>
+                        Используется для ввода пользователем времени в формате чч:мм.
+                        Отправляет на сервер строку в таком же формате.
+                    </dd>
+                    <dt>type="datetime-local"</dt>
+                    <dd>
+                        Используется для ввода пользователем времени в формате дд.мм.гггг чч:мм.
+                        Часовой пояс не учитывается.
+                        Отправляет на сервер строку в формате гггг-мм-ддTчч:мм, например
+                        2017-02-18T10:15.
+                    </dd>
+                    <dt>type="month"</dt>
+                    <dd>
+                        Позволяет выбрать месяц и год. На сервер данные приходят в формате
+                        гггг-мм, например: 2017-02.
+                    </dd>
+                    <dt>type="week"</dt>
+                    <dd>
+                        Позволяет выбрать год и неделю. На сервер данные отправляются в
+                        формате гггг-Wнн. Например: 2017-W08.
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Использование временных типов данных</legend>
+
+                    <label for="date">Тип date</label>
+                    <input name="date" id="date" type="date">
+                    <br>
+
+                    <label for="time">Тип time</label>
+                    <input name="time" id="time" type="time">
+                    <br>
+
+                    <label for="datetime-local">Тип datetime-local</label>
+                    <input name="datetime-local" id="datetime-local" type="datetime-local">
+                    <br>
+
+                    <label for="month">Тип month</label>
+                    <input name="month" id="month" type="month">
+                    <br>
+
+                    <label for="week">Тип week</label>
+                    <input name="week" id="week" type="week">
+                    <br>
+
+                    <input type="submit" value="Отправить информацию">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

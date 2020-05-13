@@ -1,0 +1,24 @@
+body {
+    perspective: 1500px;
+    height: 100vh;
+}
+
+.parent {
+    height: inherit;
+    background: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 800px;
+    height: 300px;
+    background: url(images/back.jpg);
+    transition-duration: 5s;
+}
+
+.parent:hover .child {
+    /* x, y, z */
+    transform: rotate3d(0, 0, 1, 180deg);
+}

@@ -1,0 +1,31 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+div {
+    float: left;
+    background: url('panorama.jpg') no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    animation-name: panorama;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes panorama {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}

@@ -1,0 +1,9 @@
+/*
+https://developer.mozilla.org/ru/docs/Web/CSS/object-fit
+*/
+img {
+    width: 500px;
+    height: 300px;
+    /*fill, contain, cover, none, scale-down*/
+    object-fit: fill;
+}

@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    background: #ccc;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+    /*выравнивание по горизонтали*/
+    justify-items: start;
+
+    /*выравнивание по вертикали*/
+    align-items: center;
+}
+
+.grid div {
+    background: #dca7a7;
+    outline: 1px solid #000;
+}
+
+.grid div:nth-child(1) {
+    grid-row: 1/4;
+}
+
+.voting {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}

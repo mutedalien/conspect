@@ -1,0 +1,17 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.asBackgound {
+    width: 500px;
+    height: 500px;
+    background: url('../images/penguin.svg') no-repeat;
+    background-size: contain;
+}
+
+img {
+    width: 2000px;
+    height: 2000px;
+}

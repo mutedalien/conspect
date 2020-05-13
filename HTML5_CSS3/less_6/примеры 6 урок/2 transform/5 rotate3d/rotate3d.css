@@ -1,0 +1,10 @@
+img:hover {
+    /*
+    2 - вращение по оси x
+    3 - вращение по оси y
+    5 - вращение по оси z
+    deg - угол поворота
+    */
+    transform: rotate3d(0, 0, 15, 75deg);
+    transition-duration: 1s;
+}

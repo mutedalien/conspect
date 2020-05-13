@@ -1,0 +1,27 @@
+img:hover {
+    /*x, y*/
+    transform: skew(15deg, -20deg);
+    transition-duration: 1s;
+}
+
+.skewX, .skewY {
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+}
+
+.skewX {
+    background: #91aa77;
+}
+.skewX:hover {
+    transform: skewX(25deg);
+    transition-duration: 1s;
+}
+
+.skewY {
+    background: #ff9202;
+}
+.skewY:hover {
+    transform: skewY(45deg);
+    transition-duration: 1s;
+}

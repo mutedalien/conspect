@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Type range</title>
+    </head>
+    <body>
+        <header>
+            <div class="floatFigure">
+                <img src="images/html5css3.png" alt="html5 css3">
+            </div>
+            <h1>HTML5 & CSS3</h1>
+        </header>
+
+        <nav>
+            <a href="autocomplete.html">Автодополнение</a>
+            <a href="date_formats.html">Атрибут type для работы с датами</a>
+            <a href="other_formats.html">Другие атрибуты type</a>
+            <a href="pattern_autofocus.html">Атрибуты pattern и autofocus</a>
+            <a href="type_image.html">Type image</a>
+            <a href="type_range.html">Type range</a>
+        </nav>
+
+        <div id="content">
+            <div>
+                <h1>На этой странице представлен type="range".</h1>
+                <dl>
+                    <dt>type="range"</dt>
+                    <dd>
+                        Создает ползунок на странице, передвигая который пользователь может выбрать
+                        значение из заданного диапазона, по умолчанию диапазон находится между 0 и
+                        100.
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="" method="post">
+                <label for="range">Тип range</label>
+                <input name="range" id="range" type="range" value="10" step="0.1">
+
+                <br>
+                <input type="submit">
+            </form>
+
+            <br><br><br>
+
+            Пример ниже иллюстрирует способ вывода текущего значения ползунка:
+            <form oninput="result.value=range2.value" action="" method="post">
+                <input name="range" id="range2" type="range" value="10" step="0.1">
+                <br>
+                Значение range:
+                <output name="result" for="range2">0</output>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

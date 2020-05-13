@@ -1,0 +1,33 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: 0 0 10px #000;
+    display: grid;
+    grid-template-rows: minmax(150px, auto) 1fr minmax(200px, auto);
+}
+
+@media (min-width: 1160px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+.header {
+    background: #ccc;
+}
+
+.content {
+    background: #86e271;
+}
+
+.footer {
+    background: #56c5ff;
+}

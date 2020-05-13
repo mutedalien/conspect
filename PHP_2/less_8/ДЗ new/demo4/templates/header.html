@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }}</title>
+    <meta content="text/html; charset=Windows-1251" http-equiv="content-type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="v/style.css"/>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/category.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    .changeCount {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .changeCount:hover {
+        text-decoration: none;
+    }
+</style>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+
+
+    <div>
+        <span class="navbar-brand">Здравствуй,
+        {% if name %}
+            {{name}}
+        {% else %}
+            гость
+        {% endif %}
+        </span>
+
+        <a href="/public/index.php" class="btn btn-info" role="button" aria-pressed="true">Главная</a>
+        {% if isAuth %}
+        <a href="/public/index.php?path=cabinet" name="logout" class=" btn btn-success" role="button"
+           aria-pressed="true">Кабинет</a>
+        <a href="/public/index.php?path=login" name="logout" class=" btn btn-danger" role="button"
+           aria-pressed="true">ВЫХОД</a>
+        {% else %}
+        <a href="/public/index.php?path=login" class="btn btn-success" role="button" aria-pressed="true">Авторизация</a>
+        {% endif %}
+        <a href="/public/index.php?path=basket" id="bc" style="margin-right: 0;color: white; display: block;">В корзине
+            {{countBasket}} товаров</a>
+    </div>
+
+    <div>
+
+</nav>
+{% for key, user in content_data %}
+
+
+{% if key == 'name' %}
+<!--{{user}}-->
+
+{% endif %}
+
+
+{% endfor %}
+
+<ul>
+
+    {% for category in categories %}
+    <li>
+        <a href="/categories/?id={{ category.id_category }}" link="{{ category.id_category }}" class="category-link">{{
+            category.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+
+

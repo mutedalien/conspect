@@ -1,0 +1,32 @@
+<table class="table col-md-10 m-auto">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Название</th>
+        <th>Цена</th>
+        <th>Кол-во</th>
+        <th>Итого</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for key, good in content_data.item %}
+    <tr>
+        <th scope="row">{{loop.index}}</th>
+        <td>{{good.nameFull}}</td>
+        <td>{{good.price}} руб.</td>
+        <td>
+            <a href="#" class='changeCount decrease' data-id="{{good.id}}">+</a>
+            {{good.count}}
+            <a href="#" class='changeCount increase' data-id="{{good.id}}">-</a>
+        </td>
+        <td>{{good.total}} руб.</td>
+    </tr>
+    {% endfor %}
+
+
+    </tbody>
+</table>
+
+<div class="alert alert-info col-md-10 m-auto text-center" role="alert">
+    <strong>{{content_data.total}}</strong> итого к оплате
+</div>

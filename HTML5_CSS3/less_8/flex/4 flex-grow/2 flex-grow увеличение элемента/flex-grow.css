@@ -1,0 +1,18 @@
+.my-flex-container {
+    width: 750px;
+    height: 200px;
+    background: #ccc;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.my-flex-block {
+    background: #323232;
+    outline: 3px solid #fff;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.my-flex-block:nth-child(2) {
+    flex-grow: 5;
+}

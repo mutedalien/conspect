@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Главная</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<style>
+.menu li
+{
+background-color:#C5007F;
+}
+.menu li:nth-child(2) 
+{
+font-weight:bold;
+background-color:#9C0065;
+}
+</style>
+</head>
+<script src='../assets/js/jquery-3.3.1.min.js'></script>
+<body>
+	<div class="phoneBar">
+		<img src='../assets/images/phone.png' width="120px;">
+	</div>	
+	{% include 'header.tmpl' %}
+	<content>
+		<div class="mainBox">
+			<div class="SideBar">			
+					<ul class="menu">
+						<li><a href="index.php?path=index">Главная</a></li>
+						<li><a href="index.php?path=catalog/show">Каталог</a></li>					
+						<li><a href="index.php?path=contacts/show">Контакты</a></li>	
+					</ul>
+			</div >	
+			<div  class="SpaceBar">	
+			</div>	
+			<div  class="Content">
+				<div class="OrderControl">
+					<table id="OrderStatus" class="OrderTable" >
+						<tr>								
+						<td>
+							<form action='#' method='POST'>
+								<p>Введите ваше имя и номер телефона для <br> отправки на обработку</p>
+								<br>
+								<p>Имя</p>
+								<input type='text' id='nameUser' size="48" placeholder="Имя" name='name' required> 
+								<br>	
+								<br>
+								<p>телефон</p>
+								<input type='text' id='phoneUser' size="48" placeholder="89008007060" name='phone' required>														
+								<br>
+								<br>
+								<div id="ButtOrder">
+									<div class='ButtSend' onclick='SendOrder({{busket.colvo}});' type='button' name='submit' value=''>Заказать</div>
+								</div>
+							</form>
+						</td>
+						<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>										
+						<td><p onclick="DelBusket();" class='btnD'>Очистить корзину</p></td>		
+						</tr>
+					</table>				
+				</div>
+				<div class="OrderBox">
+					<table id="OrderList" class='BusketTable'>
+						<tr>	
+							<td>№</td>	
+							<td>Название товара</td>	
+							<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>	
+							<td>Цена</td>
+						</tr>
+							{% for item in contentData %}
+								<tr>												
+									<td>{{loop.index}}</td>	
+									<td><a href="index.php?path=product/show/{{item.id}}">{{item.title}}</a></td>	
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>	
+									<td>{{item.price}} руб</td>
+									<td><p onclick="DelBusketItem({{loop.index0}},{{busket.colvo}});" class="DelItem">Удалить товар из корзины</p></td>	
+								</tr>	
+							{% endfor %}
+					</table>			
+				</div>									
+			</div>
+		</div>
+	</content>
+	{% include 'footer.tmpl' %}	
+</body>
+<script src='../assets/js/AjaxBusket.js'></script>
+</html>

@@ -1,0 +1,28 @@
+<nav>	
+	<div class="navbar">	
+		<div class="AdminBar">
+			{%if user %}			
+				<a href='#'></a>
+				<a href='index.php?path=admin/logout'>Выход</a>					
+			{% else %}						
+				<a href='index.php?path=admin/login'>Вход</a>						
+			{% endif %}	
+		</div>					
+		<div class="headerBox">		
+			<table class="navbar">
+				<tr>
+					<td class="logo_nav"><img src="../assets/images/logo.png"  alt="logo"></td>
+					<td></td>
+					<td class="form_nav"><form>
+						<input size="40" type="search" name='search'>
+						<input type="submit" name='submit' value="Искать">
+						</form></td>
+					<td></td>	
+					<td>
+						<a href='index.php?path=busket/show'><div id='busket' class='basket'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Корзина &nbsp&nbsp&nbsp&nbsp{{busket.colvo}}</div></a>	
+					</td>
+				<tr>	
+			</table>						
+		</div>
+	</div>
+</nav>
