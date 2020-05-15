@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = 10;
+    function sum(x=1,y=1) {
+
+        if(isEven(x) && isEven(y)){
+            var z = (x + y)*a;
+            return z;
+        }
+        else{
+            return("Сгенерировано нечетное число");
+        }
+        }
+    /*var result = 5 * sum(2,2);
+    sum(3,4);
+
+    sum(1,2);
+
+    alert(result);*/
+
+    //alert(z)  //вне функции никогда не выполнится, так как z локальная переменная
+
+
+
+    function isEven(x){
+        if(x%2==0){
+            return true;
+        }
+        return false;
+    }
+
+
+
+      var x1 = Math.round(Math.random()*(10-1)+1);
+    var x2 = Math.round(Math.random()*(10-1)+1);
+
+    alert(sum(x1,x2));
+
+  /*  if(isEven(x1) && isEven(x2)){
+        alert(sum(x1,x2));
+    }
+
+    else{
+        alert("Сгенерировано нечетное число");
+    }*/
+
+</script>
+
+</body>
+</html>
