@@ -7,18 +7,18 @@
 <body>
 
 <script>
-    function deposit(money,pr,srok){
-        var p;
-        for(var i=1;i<=srok;i++){
-            p = money * pr / 100;//ежегодная прибыль
-            money+=p;
+    function deposit(money,pr,srok){ // деньги, процент, срок
+        var p; // прибыль
+        for(var i=1;i<=srok;i++){ // переменная i используется как год вклада
+            p = money * pr / 100; //ежегодная прибыль
+            money+=p; // деньги = деньги + прибыль
             document.write("За "+i+" год ваша прибыль составила "+p+
                 "ваша сумма = "+money+"<hr>");
         }
     }
 
 
-    for(var man=1;man<=10;man++){
+    for(var man=1;man<=10;man++){ // расчитываем вклады по числу людей
         var money = parseInt(Math.random()*(1000000-100000)+100000);
         var srok = parseInt(Math.random()*4+1);
         var pr=8;
