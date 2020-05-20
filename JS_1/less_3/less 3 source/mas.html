@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var mas = [1,2,3,4,5];  //  mas[0] для обращения к 1.
+
+    mas.push("Новый элемент");
+
+  /*  alert(mas);*/
+
+   /* alert(mas.indexOf(4));*/   //  indexOf(4) означает цифру 4, чей индекс равен 3
+
+    /* var mas2=[];
+
+  for(var i=0;i<mas.length;i++){
+      mas2[i]=mas[i]*mas[i];
+  }
+
+  alert(mas2);*/
+
+    /*for(var i in mas){
+        console.log(mas[i]);
+    }*/
+
+
+     var sum=0;
+   for(var i of mas){
+       sum=sum+i;
+   }
+   alert(sum);
+
+
+</script>
+
+</body>
+</html>

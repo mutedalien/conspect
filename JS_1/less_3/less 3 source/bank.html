@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function deposit(money,pr,srok){
+        var p;
+        for(var i=1;i<=srok;i++){
+            p = money * pr / 100;//ежегодная прибыль
+            money+=p;
+            document.write("За "+i+" год ваша прибыль составила "+p+
+                "ваша сумма = "+money+"<hr>");
+        }
+    }
+
+
+    for(var man=1;man<=10;man++){
+        var money = parseInt(Math.random()*(1000000-100000)+100000);
+        var srok = parseInt(Math.random()*4+1);
+        var pr=8;
+        if(money<300000){
+            pr=7;
+        }
+        document.write("<h1>Клиент №"+man+"(сумма="+money+",Ставка="+pr+")</h1>");
+        deposit(money,pr,srok);
+
+    }
+</script>
+
+
+
+</body>
+</html>

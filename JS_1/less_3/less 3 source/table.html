@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var table = "<table border=1 width=700><tr>";
+    var i = 1;//счетчик цикла
+    while(i<=10){
+        table+="<td>"+i+"</td>";
+        i++;
+    }
+
+    table+="</tr><tr>";
+
+    i=1;
+
+    while(i<=10){
+        var x = i * i;
+        table+="<td>"+x+"</td>";
+        i++;
+    }
+    table+="</tr></table>";
+
+
+    document.write(table);
+
+
+    var list = "<ul>";
+
+    var j = 0;
+
+    while(j<100){
+        list+="<li>Элемент "+j+"</li>";
+        j++;
+    }
+
+    list+="</ul>";
+
+    document.write(list);
+
+
+</script>
+
+
+
+
+</body>
+</html>
