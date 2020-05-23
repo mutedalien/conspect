@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var car = {
+        name:"Audi",
+        year:2019,
+        engineStarted:false,
+
+    }
+    /* console.log(car);*/
+
+    car.color = "white";
+    car.start = startEngine;
+
+  /*  function startEngine(){
+        console.log(this);
+        }*/
+
+   /* function startEngine(){
+        if (!car.engineStarted) {
+        car.engineStarted=true;
+    }
+    }*/
+
+     var car2 = {
+        name:"BMW",
+        year:2018,
+        engineStarted:false
+    }
+
+
+
+        car2.start = startEngine;
+
+
+        function startEngine(){
+            if(!this.engineStarted){
+                this.engineStarted=true;
+                alert("Автомобиль "+this.name+" запущен!");
+            }
+        }
+
+        car2.start();
+
+      car2.stop = function(){
+     if(this.engineStarted){
+         this.engineStarted=false;
+         alert("Автомобиль "+this.name+" выключен!");
+     }
+ }
+
+ car2.stop();
+
+ var car3 = car;
+car = null;
+delete car3.year;
+console.log(car3);
+
+   for(var i in car3){
+        console.log(i+":"+car3[i]);
+    }
+
+</script>
+
+
+</body>
+</html>
