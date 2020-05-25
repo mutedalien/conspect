@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		td {
+			width: 50px;
+			border: 1px solid black;	
+		}
+	</style>
+</head>
+<body>
+	<template id="temp1">
+		<ul class="class_n"></ul>
+	</template>
+	
+<script>
+	var doc = document;
+	var myTemp = doc.getElementById('temp1').content;
+	
+	var eternalTemp = myTemp.cloneNode(true);
+
+	for(let i = 0; i < 50; i++) {
+		let myLi = doc.createElement('li');
+		myLi.innerText = i;
+		eternalTemp.querySelector('.class_n').appendChild(myLi);
+	}
+
+	document.body.appendChild(eternalTemp);
+
+	console.log(myTemp);
+	console.log(eternalTemp);
+
+</script>
+</body>
+</html>
