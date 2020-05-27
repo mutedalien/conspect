@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Number</title>
+</head>
+<body>
+<script>
+    var num = parseInt(prompt("Введите трехзначное число от 0 до 999"));
+
+    function creatObjFromNum(num) {
+
+        var objNum = {};//объявляем объект
+
+        if(num < 0 || num > 999){
+            console.log("Число " + num + " вне диапазона 0 - 999");
+            return objNum;  }
+
+        else if (num >= 0 && num <= 999) {   //число 123
+            objNum.hundreds = parseInt(num / 100);//вычисляем сотни
+            objNum.tens = parseInt((num % 100) / 10);//вычисляем десятки
+            objNum.units = parseInt(num % 10);//вычисляем единицы
+            console.log(objNum);
+        } else {
+            console.log("некорректное значение!");
+            console.log(objNum);
+        }
+    }
+    creatObjFromNum(num);
+</script>
+</body>
+</html>

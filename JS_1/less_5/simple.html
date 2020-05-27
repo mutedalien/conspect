@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="block">
+    <h1 id="header">Заголовок</h1>
+</div>
+
+<script>
+    var h = document.getElementById("header");
+    alert(h.innerText);
+    h.innerText = "New header!";
+
+    document.getElementById("header").innerHTML += "<h4 style='color:red;'>Новый текст</h4>"
+
+</script>
+
+</body>
+</html>

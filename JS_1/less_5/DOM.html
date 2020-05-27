@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+
+<h1 id="header">Заголовок  <!-- &#9822; -->   </h1>
+<h1 id="header2">Заголовок 2</h1>
+<h1 id="header3">Заголовок 3</h1>
+<h1 id="header4">Заголовок 4</h1>
+
+<p class="article">Первый параграф</p>
+<p class="article">Второй параграф</p>
+<p class="article">Третий параграф</p>
+
+<div>
+    Блок кода
+    <div>Вложенный блок</div>
+</div>
+
+<ul class="x" id="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<script>
+    var list = document.querySelector(".x");  // тег ul, класс .x, id #list
+    var newElement = document.createElement("li");//<li></li>
+    newElement.innerText = "Новый элемент";
+    list.insertBefore(newElement,list.children[4]);
+
+    //Вывод всех вложенных тэгов в body
+
+    for(var i=0;i<document.body.childNodes.length;i++){
+        console.log(document.body.childNodes[i]);
+    }
+
+    //Изменение стилей тега
+
+  /* var header = document.querySelectorAll("h1")[1];
+    header.style.color = "red";
+    header.style.fontSize = "50px";
+     header.className = "class1";
+    header.setAttribute("title","text");*/
+
+
+/*    var header = document.querySelectorAll("h1");  // объекты коллекции Node.list
+    var c;
+    for(var i=0;i<header.length;i++){  //header.style.color = "red";
+        if(i%2==0){
+            c="red";
+        }
+        else{
+            c="blue";
+        }
+        header[i].style.color=c;
+    } */
+
+    var p = document.getElementsByClassName("article");
+    console.log(p);
+    for(var i=0, size=20; i<p.length; i++, size+=20){
+        p[i].style.fontWeight = "bold";
+        p[i].style.fontSize = size+"px";
+    }
+
+     var text = document.createTextNode("Новый текстовый узел");
+
+    document.body.appendChild(text);
+
+  /* document.querySelector("div div").appendChild(text);*/
+
+
+    var link = document.createElement("a");
+    link.innerText = "Перейти в Google";
+    link.href="http://google.com";
+    document.querySelector("div").appendChild(link);
+
+</script>
+
+
+</body>
+</html>
