@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function f(){
+        alert();
+    }
+</script>
+
+<button id="b1" onclick="f()">GO1</button>
+<button id="b2">GO 2</button>
+<button id="b3">GO 3</button>
+<button id="b4">GO 4</button>
+<button onclick="console.log('GO-5');document.getElementById('b1').click()">GO 5</button>
+
+<script>
+    /*var b2 = document.getElementById('b2');
+    var b3 = document.getElementById('b3');
+    var b4 = document.getElementById('b4');
+
+    b2.onclick = function(){
+        console.log('b2');
+        document.getElementById('b1').click();
+    }
+
+    function f1(event){
+        console.log(event);
+        /!*console.log(this);*!/
+    }
+
+    /!*function f2(){
+        console.log("f2");
+        b3.removeEventListener("click",f2);
+    }*!/
+
+    b4.onclick = f1;
+
+    b3.addEventListener("click",f1);
+
+ /!*   b3.addEventListener("click",f2);*!/
+        */
+
+</script>
+
+
+</body>
+</html>

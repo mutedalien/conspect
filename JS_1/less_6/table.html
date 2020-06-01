@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 6</title>	
+
+
+</head>
+<body>
+	<script>
+
+  window.onload = function(){
+	var mas_td = document.querySelectorAll("#t2 td");
+	for(var i=0;i<mas_td.length;i++){
+		mas_td[i].onclick = function(){
+			this.innerText="";
+		}
+	}
+  };	
+	
+	
+  function f(id) {
+	   var x = id.split("");//массив x=[f,5]
+       var id_el = "g_"+x[1];//id элемента второй таблицы, который нужно восстановить
+       document.getElementById(id_el).innerText='Ячейка'+x[1];
+	}
+
+
+</script>
+
+	<table>
+		<tr>
+			<td><input id="f1" type="button" name="button1" onclick="f(this.id)" value="Ячейка1"> </td>
+			<td><input id="f2" type="button" name="button2" onclick="f(this.id)" value="Ячейка2"></td>
+			<td><input id="f3" type="button" name="button3" onclick="f(this.id)" value="Ячейка3"></td>
+		</tr>
+		<tr>
+			<td><input id="f4" type="button" name="button4" onclick="f(this.id)" value="Ячейка4"></td>
+			<td><input id="f5" type="button" name="button5" onclick="f(this.id)" value="Ячейка5" ></td>
+			<td><input id="f6" type="button" name="button6" onclick="f(this.id)" value="Ячейка6"></td>
+		</tr>
+		<tr>
+			<td><input id="f7" type="button" name="button7" onclick="f(this.id)" value="Ячейка7"></td>
+			<td><input id="f8" type="button" name="button8" onclick="f(this.id)" value="Ячейка8"></td>
+			<td><input id="f9" type="button" name="button9" onclick="f(this.id)" value="Ячейка9"></td>
+		</tr>
+	</table><br><br>
+	<table id="t2" border='1'>
+		<tr>
+			<td id="g_1">Ячейка 1 </td>
+			<td id="g_2">Ячейка 2</td>
+			<td id="g_3">Ячейка 3</td>
+		</tr>
+		<tr>
+			<td id="g_4">Ячейка 4</td>
+			<td id="g_5">Ячейка 5</td>
+			<td id="g_6">Ячейка 6</td>
+		</tr>
+		<tr>
+			<td  id="g_7">Ячейка 7</td>
+			<td  id="g_8">Ячейка 8</td>
+			<td  id="g_9">Ячейка 9</td>
+		</tr>
+	</table><br><br>
+
+
+
+</body>
+</html>
