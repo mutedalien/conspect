@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+    /*   function sum(x, y) {    // обычная функция
+         return x + y;
+       }
+       
+        var sum = (x, y) => x + y;   // вариант стрелочной функции
+
+        sum(1,2)*/
+
+
+        var user = {
+            firstName: 'Alex',
+            sayUsual() {
+                setTimeout(function() {   // обычная функция
+                    //window
+                    console.log(this);
+                }, 1000);
+            },
+
+            sayArrow() {
+                setTimeout(() => {      // стрелочная функция
+                    //user
+                    console.log(this);
+                }, 2000);
+            }
+        };
+
+        user.sayUsual();     //window
+        user.sayArrow();     //user
+        /* в стрелочной функции this равен this'у, который был у вызывающей функции в
+        момент объявления стрелочной функции, не в момент вызова */
+
+    </script>
+
+
+</body>
+</html>

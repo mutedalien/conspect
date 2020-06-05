@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+   var user = {
+        userName: 'Alex',
+        sayHello() {
+            console.log(this);
+            console.log(this.userName);
+        }
+    };
+
+    //Window
+    //undefined
+    /*setTimeout(user.sayHello, 1000);*/
+
+    //bind создал новую функцию, в которой this всегда равен user
+   /* setTimeout(user.sayHello.bind(user), 1000);*/
+
+    //bind - создает новую функцию, которую потом можно вызвать
+    var showName = user.sayHello.bind(user);
+    showName.call(Window);
+    console.log(showName);
+
+</script>
+
+
+</body>
+</html>

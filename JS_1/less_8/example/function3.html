@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //Одалживание метода
+
+    var commonShow = function(){
+        console.log("Книга "+this.title)
+    };
+
+    var book1 = {
+        title:"Основы JS",
+        show:commonShow
+    };
+
+    var book2 = {
+        title:"Продвинутый JS",
+         show:function(){ alert() }
+    };
+
+   /* book2.show = book1.show;
+    book2.show(); */
+
+    book1.show.call(book2);
+    book2.show();
+
+</script>
+
+</body>
+</html>

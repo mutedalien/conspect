@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function addInfo(age, position) {
+        console.log(age, position);
+    }
+
+    var user1 = {
+        userName: 'Alex'
+    }
+
+    addInfo.apply(user1, ['30', 'developer']);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<input type="button" value="click" id="x">-->
+
+<script>
+
+     /*var f = function(a,b){
+          var x = a + b;
+          alert(x);
+     }
+     alert(typeof(f));
+
+     f(1,2);*/
+
+    //Отличия let от var
+
+    //Ошибка при повторном обращении
+
+    /* console.log(a);
+     var a = 1;
+     console.log(a);
+     let a = 1; */
+
+    //Области видимости. let видна только внутри {}
+
+    /*let phone ='111';
+    if(true){
+     phone = '0';
+       console.log(phone);
+    }
+    console.log(phone);*/
+
+
+    //Вложенные функции
+
+   /* window.onload = function(){
+       document.getElementById('x').onclick=function(){
+          alert('click!!!');
+       };
+    }*/
+
+    //Область видимости
+
+     /*var message = "тест";
+
+    function outer(){
+
+       function inner(){
+          alert(message);
+       }
+
+    }
+    outer();*/
+
+    //Замыкания
+
+    /* function createCounter(counter=0){
+         /!*var a = 10;*!/
+       return function(){
+          console.log(counter++);
+       }
+     }
+     var test = createCounter(9);
+     test();
+     test();
+     test();*/
+
+     //Множественное вложение функций
+
+   /*  var b = 0;
+    function b1(){
+        return function b2(){
+            return function b3(){
+                return b++;
+            }
+        }
+    }
+
+    console.log(b1()()());
+    console.log(b1()()());
+    console.log(b1()()()); */
+
+
+</script>
+
+</body>
+</html>

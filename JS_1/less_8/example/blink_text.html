@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Заголовок</h1>
+
+<script>
+
+    var c = "blue";
+    window.onload = function(){
+        f();
+    }
+    function f(){
+        var x = document.querySelector("h1").style.color=c;
+        c=="blue"?c="red":c="blue";
+        setInterval("f()",1000);
+    }
+
+</script>
+
+</body>
+</html>
