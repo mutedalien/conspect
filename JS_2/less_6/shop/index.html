@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eShop</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <input type="text" class="goods-search" />
+            <button class="search-button" type="button">Искать</button>
+            <button class="cart-button" type="button">Корзина</button>
+        </header>
+        <main>
+            <goods-list :goods="filteredGoods"></goods-list>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
